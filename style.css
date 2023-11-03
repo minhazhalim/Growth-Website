@@ -1,0 +1,396 @@
+:root {
+     --primary-color:#4891ff;
+     --light-color:#f4f4f6;
+     --dark-color:#111;
+}
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+body {
+     font-family: 'Poppins',sans-serif;
+     font-size: 16px;
+     line-height: 1.5;
+     background-color: #fff;
+     overflow-x: hidden;
+}
+a {
+     text-decoration: none;
+     color: #333;
+}
+ul {
+     list-style: none;
+}
+img {
+     max-width: 100%;
+}
+.navbar {
+     background-color: #fff;
+     padding: 20px;
+}
+.navbar .container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.navbar .container .main-menu ul {
+     display: flex;
+}
+.navbar .container .main-menu ul li a {
+     padding: 10px 20px;
+     display: block;
+     font-weight: 600;
+     transition: 0.5s;
+}
+.navbar .container .main-menu ul li a:hover {
+     color: var(--primary-color);
+}
+.navbar .container .main-menu ul li a .fas {
+     margin-right: 10px;
+}
+.navbar .container .main-menu ul li:last-child a {
+     margin-left: 10px;
+}
+.hero {
+     margin-bottom: 50px;
+}
+.hero .container {
+     background-image: url('./images/hero-bg.png');
+     background-repeat: no-repeat;
+     background-position: center bottom;
+     background-size: contain;
+     height: 550px;
+}
+.hero .hero-content {
+     width: 70%;
+}
+.hero .hero-text {
+     width: 70%;
+     margin-bottom: 20px;
+}
+.video {
+     padding: 10px 0px 40px;
+}
+.video .video-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.video .video-preview {
+     margin-bottom: 20px;
+}
+.testimonials {
+     padding: 40px 0px;
+}
+.testimonials .testimonials-heading {
+     width: 700px;
+     margin-bottom: 40px;
+}
+.testimonials .testimonials-grid {
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 30px;
+}
+.testimonials .card p:nth-child(2) {
+     margin-top: 30px;
+     font-weight: bold;
+}
+.pricing .pricing-grid {
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 30px;
+     margin-top: 50px;
+}
+.pricing .pricing-card-subheading {
+     margin-bottom: 30px;
+}
+.pricing .pricing-card-price {
+     margin-bottom: 30px;
+     padding: 20px 0px;
+     border-bottom: 1px solid #ccc;
+}
+.pricing ul {
+     margin: 30px 0px;
+}
+.pricing ul li {
+     margin-bottom: 20px;
+}
+.pricing ul li .fas {
+     margin-right: 10px;
+}
+.pricing .pricing-footer {
+     margin: 30px 0px;
+}
+.faq {
+     padding: 40px 0px;
+}
+.faq .faq-group {
+     border-bottom: 1px solid #ccc;
+     padding-bottom: 20px;
+}
+.faq .faq-group .faq-group-header {
+     margin-bottom: 15px;
+     padding: 20px 0px;
+     position: relative;
+}
+.faq .faq-group .faq-group-header h4 {
+     font-weight: 600;
+     width: 95%;
+}
+.faq .faq-group .faq-group-header .fas {
+     position: absolute;
+     top: 35px;
+     right: 0px;
+     font-size: 1.3rem;
+     cursor: pointer;
+}
+.faq .faq-group .faq-group-body {
+     display: none;
+}
+.faq .faq-group .faq-group-body.open {
+     display: block;
+}
+
+.faq ul.faq-menu {
+     max-width: 400px;
+     margin: auto;
+     padding: 10px 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #ddd;
+     border-radius: 10px;
+     font-weight: 600;
+     cursor: pointer;
+}
+.faq ul.faq-menu li {
+     padding: 10px 20px;
+     border-radius: 5px;
+     text-align: center;
+}
+.faq ul.faq-menu li.active {
+     background-color: var(--primary-color);
+     color: #fff;
+}
+.footer {
+     padding: 40px 0px;
+}
+.footer h4 {
+     margin-bottom: 10px;
+}
+.footer ul li {
+     line-height: 2.5;
+}
+.footer a {
+     color: #ccc;
+}
+.footer .fab {
+     font-size: 1.5rem;
+     margin-right: 10px;
+}
+.footer-grid {
+     display: grid;
+     grid-template-columns: 2fr 1fr 1fr 1fr;
+     gap: 30px;
+     align-items: center;
+     justify-content: center;
+}
+.footer .card {
+     margin: 20px 30px 30px 0px;
+}
+.footer input[type='email'] {
+     width: 100%;
+     margin: 20px 0px;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+}
+.container {
+     max-width: 1100px;
+     margin: 0px auto;
+     padding: 0px 15px;
+}
+.container-small {
+     max-width: 800px;
+     margin: 0px auto;
+     padding: 0px 15px;
+}
+.card {
+     background-color: #fff;
+     color: #000;
+     border-radius: 10px;
+     padding: 20px;
+}
+.button {
+     display: inline-block;
+     padding: 13px 20px;
+     background-color: var(--light-color);
+     color: #333;
+     font-weight: 600;
+     text-decoration: none;
+     text-align: center;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: 0.5s;
+}
+.button:hover {
+     opacity: 0.8;
+}
+.button-primary {
+     background-color: var(--primary-color);
+     color: #fff;
+}
+.button-dark {
+     background-color: var(--dark-color);
+     color: #fff;
+}
+.button-block {
+     display: block;
+     width: 100%;
+}
+.text-extraExtraLarge {
+     font-size: 3rem;
+     font-weight: 600;
+     line-height: 1.2;
+     margin: 40px 0px 20px;
+}
+.text-extraLarge {
+     font-size: 2.2rem;
+     font-weight: normal;
+     line-height: 1.4;
+     margin: 40px 0px 20px;
+}
+.text-large {
+     font-size: 1.8rem;
+     font-weight: normal;
+     line-height: 1.4;
+     margin: 30px 0px 20px;
+}
+.text-medium {
+     font-size: 1.2rem;
+     font-weight: normal;
+     line-height: 1.4;
+     margin: 20px 0px 10px;
+}
+.text-small {
+     font-size: 0.9rem;
+     font-weight: normal;
+     line-height: 1.4;
+     margin: 10px 0px 5px;
+}
+.text-center {
+     text-align: center;
+}
+.background-primary {
+     background-color: var(--primary-color);
+     color: #fff;
+}
+.background-light {
+     background-color: var(--light-color);
+     color: #333;
+}
+.background-dark {
+     background-color: var(--dark-color);
+     color: #fff;
+}
+.background-black {
+     background-color: #000;
+     color: #fff;
+}
+.hamburger-button {
+     display: none;
+     background: none;
+     border: none;
+     cursor: pointer;
+     padding: 10px;
+     z-index: 1000;
+}
+.hamburger-button .hamburger-line {
+     width: 30px;
+     height: 3px;
+     background-color:#333;
+     margin: 6px 0px;
+}
+.mobile-menu {
+     position: fixed;
+     top: 0px;
+     right: -300px;
+     z-index: 100;
+     width: 250px;
+     height: 100%;
+     background-color: #fff;
+     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+     transition: right 0.3s ease-in-out;
+}
+.mobile-menu.active {
+     right: 0px;
+}
+.mobile-menu ul {
+     margin-top: 100px;
+     padding-right: 10px;
+}
+.mobile-menu ul li {
+     margin: 10px 0px;
+}
+.mobile-menu ul li a {
+     font-size: 20px;
+     transition: 0.3s;
+}
+@media only screen and (max-width:960px){
+     .text-extraExtraLarge {
+          font-size: 2.5rem;
+     }
+}
+@media only screen and (max-width:670px){
+     .navbar .main-menu {
+          display: none;
+     }
+     .navbar .hamburger-button {
+          display: block;
+     }
+     .hero .container {
+          background-image: url('./images/hero-bg-mobile.png');
+          background-repeat: no-repeat;
+          background-position: bottom;
+          background-size: 350px 400px;
+          height: 770px;
+     }
+     .hero .hero-content,.hero .hero-text {
+          width: 100%;
+          text-align: center;
+     }
+     .hero .hero-buttons .button {
+          margin-bottom: 10px;
+          display: block;
+          width: 100%;
+     }
+     .testimonials .testimonials-heading {
+          max-width: 100%;
+          text-align: center;
+     }
+     .testimonials .testimonials-grid,.pricing .pricing-grid,.footer .footer-grid {
+          grid-template-columns: 1fr;
+     }
+     .footer .card {
+          margin-right: 0;
+     }
+     .footer .footer-grid div {
+          text-align: center;
+     }
+     .text-extraLarge {
+          font-size: 1.9rem;
+     }
+     .text-large {
+          font-size: 1.5rem;
+     }
+     .text-medium {
+          font-size: 1.1rem;
+     }
+}
+@media only screen and (max-width:500px){
+     .text-extraExtraLarge {
+          font-size: 2rem;
+     }
+}
